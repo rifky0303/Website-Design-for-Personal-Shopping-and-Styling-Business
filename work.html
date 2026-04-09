@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal shopping, fashion styling, wardrobe curation, and closet organizing services. Elevate your style with expert guidance.">
+    <title>Elevate Style | Personal Shopping & Fashion Styling</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">Elevate Style</a>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Elevate Your Style</h1>
+            <p>Expert personal shopping, fashion styling, and wardrobe curation to make you feel confident and chic.</p>
+            <a href="#services" class="cta-btn">Discover Services</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>With years of experience in the fashion industry, I specialize in transforming wardrobes and boosting personal style. From busy professionals to vacation-ready looks, I curate pieces that reflect your unique vibe.</p>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2>My Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Personal Shopping</h3>
+                    <p>Curated selections tailored to your needs, budget, and lifestyle.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Fashion Styling</h3>
+                    <p>Complete outfits for any occasion, from everyday to red carpet.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Wardrobe Curation/Overhaul</h3>
+                    <p>Declutter and refresh your closet for effortless style.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Work Styling</h3>
+                    <p>Professional looks that command attention and confidence.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Event Styling</h3>
+                    <p>Stand out at weddings, galas, or parties with bespoke ensembles.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Vacation Styling</h3>
+                    <p>Pack-light, versatile outfits for your next getaway.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Closet Organizing</h3>
+                    <p>Functional, beautiful organization that maximizes your space.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2>Portfolio</h2>
+            <div class="portfolio-grid">
+                <img src="https://images.unsplash.com/photo-1445205170230-053b83016050?w=400&h=600&fit=crop" alt="Wardrobe overhaul example" loading="lazy">
+                <img src="https://images.unsplash.com/photo-1574169208507-84376144848b?w=400&h=600&fit=crop" alt="Event styling client" loading="lazy">
+                <img src="https://images.unsplash.com/photo-1539635278303-d4002c07eae3?w=400&h=600&fit=crop" alt="Vacation styling look" loading="lazy">
+                <!-- Add more images from your portfolio -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <h2>What Clients Say</h2>
+            <div class="testimonial-grid">
+                <blockquote>"Transformed my closet—now I dress with confidence every day!" – Sarah K.</blockquote>
+                <blockquote>"Perfect vacation wardrobe. Effortless and stylish!" – Mike R.</blockquote>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Get in Touch</h2>
+            <form id="contact-form">
+                <input type="text" placeholder="Your Name" required aria-label="Name">
+                <input type="email" placeholder="Your Email" required aria-label="Email">
+                <textarea placeholder="Tell me about your styling needs" required aria-label="Message"></textarea>
+                <button type="submit">Book a Consultation</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer with Social Media -->
+    <footer>
+        <div class="container">
+            <div class="social-links">
+                <a href="https://instagram.com/yourhandle" aria-label="Instagram">📸</a>
+                <a href="https://pinterest.com/yourhandle" aria-label="Pinterest">📌</a>
+                <a href="https://tiktok.com/@yourhandle" aria-label="TikTok">🎥</a>
+            </div>
+            <p>&copy; 2023 Elevate Style. All rights reserved.</p>
+            <!-- Instagram Feed Widget (replace YOUR_USERNAME) -->
+            <div class="instafeed">
+                <script src="https://snapwidget.com/js/snapwidget.js"></script>
+                <iframe src="https://snapwidget.com/embed/123456" class="snapwidget-widget" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:100%;"></iframe>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <!-- EmailJS Setup: Replace 'YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', 'YOUR_PUBLIC_KEY' after signing up at emailjs.com -->
+    <script>
+        emailjs.init('YOUR_PUBLIC_KEY');
+    </script>
+</body>
+</html>
